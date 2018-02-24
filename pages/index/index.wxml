@@ -1,0 +1,22 @@
+<view class='banner'>
+  <swiper indicator-dots autoplay circular interval="2500" duration="400">
+    <swiper-item wx:for="{{slidesList}}" wx:key="id">
+      <image src="{{item.image}}" mode="aspectFill" width="375" height="150" />
+    </swiper-item>
+  </swiper>
+</view>
+<view class='nav'>
+  <navigator class='nav-item bdr' url='/pages/food/food?id={{item.id}}&title={{item.name}}' wx:for="{{navsList}}" wx:key="id">
+    <image src='{{item.icon}}' lazy-load></image>
+    <text>{{item.name}}</text>
+  </navigator>
+</view>
+<view class='divider'></view>
+<view class='enter'>
+  <navigator class='enter-item'>
+    <image src='/assets/images/link-01.png'></image>
+  </navigator>
+  <navigator class='enter-item'>
+    <image src='/assets/images/link-02.png'></image>
+  </navigator>
+</view>

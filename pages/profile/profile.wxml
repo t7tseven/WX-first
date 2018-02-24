@@ -1,0 +1,34 @@
+<!--pages/profile/profile.wxml-->
+<view class='avatar'>
+  <image src='/assets/images/avatar.png'></image>
+</view>
+<view class='divider'></view>
+<view class='list'>
+ <navigator class='list-item'>
+  个人资料
+ </navigator>
+  <navigator class='list-item arrow'>
+  我的优惠卷
+ </navigator>
+</view>
+<view class='divider'></view>
+<view class='list'>
+ <navigator class='list-item arrow'>
+  常见问题
+ </navigator>
+  <navigator class='list-item arrow'>
+  使用条款
+ </navigator>
+  <navigator class='list-item arrow'>
+  联系我们
+ </navigator>
+  <navigator class='list-item arrow'>
+  购物历史
+ </navigator>
+</view>
+<view class='divider'></view>
+<view class='list'>
+ <navigator class='list-item arrow'>
+  设置
+ </navigator>
+</view>

@@ -1,0 +1,32 @@
+.food{
+  display: flex;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+  position: relative;
+}
+.food image{
+  width: 160rpx;
+  height: 160rpx;
+  margin-right: 20rpx;
+}
+.detail{
+  width: 520rpx;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #666;
+}
+.detail-title{
+  font-size: 16px;
+  font-weight: 600;
+  width: 370rpx;
+}
+.detail-address,
+.detail-time{
+  width: 370rpx;
+}
+.star{
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+}

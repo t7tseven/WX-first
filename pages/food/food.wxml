@@ -1,0 +1,15 @@
+<view class="food" wx:for="{{foodList}}" wx:key="{{id}}">
+  <image src='{{item.images[0]}}' mode='aspectFill' lazy-load></image>
+  <view class='detail'>
+    <text class='detail-title ell'>{{item.name}}</text>
+    <text class='detail-tel'>电话：{{item.phone}}</text>
+    <text class='detail-address ell'>地址：{{item.address}}</text>
+    <text class='detail-time ell'>营业时间：{{item.businessHours}}</text>
+  </view>
+  <view class='star'>
+    <view class='star-after'>★★★★★</view>
+    <view class='star-before' style='width:{{item.score}}%'>★★★★★</view>
+  </view>
+</view>
+<view class="loadmore loading" wx:if="{{hasMore}}">正在加载...</view>
+<view class="loadmore" wx:else>到底啦</view>
